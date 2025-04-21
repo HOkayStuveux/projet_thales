@@ -137,29 +137,40 @@ J’ai migré vers Docker Compose pour :
 
 .
 ├── Docker-compose.yaml
+
 ├── ssh-server/
+
 │ ├── Dockerfile
+
 │ ├── sshd_config
+
 │ ├── authorized_keys
+
 │ ├── docker-entrypoint.sh
+
 ├── ansible/
+
 │ ├── Dockerfile
+
 │ ├── ansible.cfg
+
 │ ├── inventory.ini
+
 │ ├── deploy-nginx.yml
+
 ├── ssh-keys/
+
 │ ├── id_rsa
+
 │ └── id_rsa.pub
+
 ├── ssh-keygen.sh
 
-text
 
----
+
 
 ## 9. Conclusion
 
 Ce projet démontre une approche sécurisée et reproductible du déploiement d’applications avec Docker et Ansible, en mettant l’accent sur la séparation des privilèges, la gestion des accès et la clarté des configurations.  
 L’expérience a montré que Docker Compose est indispensable pour gérer efficacement une infrastructure multi-conteneurs, tant pour la sécurité que pour la maintenabilité.  
 Les difficultés rencontrées (notamment liées à Docker Desktop et à la gestion des volumes/permissions sous Windows) ont permis de renforcer la robustesse des scripts et des procédures.
-
-Pour toute question ou suggestion, n’hésitez pas à me contacter.
